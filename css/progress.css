@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1D1D42;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00003f;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar a .logo {
+    width: 2.7dvh;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    margin-left: 30px;
+}
+
+.sidebar a.active {
+    background-color: #020269;
+}
+
+.sidebar a:hover {
+    background-color: #020269;
+}
+
+.ppts {
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.content {
+    margin-left: 300px;
+    margin-right: 55px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-container h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 30px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #1b006d, #530068) 1;
+    padding: 0 10px;
+    background-color: #ffffff00;
+    position: relative;
+}
+
+.search-icon {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.search-bar input {
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    flex: 1;
+    background-color: #ffffff00;
+    color: #fff;
+    outline: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.icons .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.user-name {
+    margin-left: 10px;
+    color: #fff;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.layout {
+    display: flex;
+    margin-top: 30px;
+}
+
+.left-column {
+    width: 20%;
+    margin-right: 20px;
+    background-image: linear-gradient(to right, #1b006d, #530068);
+    padding: 10px;              /* Corrected to lowercase px */
+    border-radius: 10px;        /* Corrected to lowercase px */
+    height: 50px;
+    display: flex;              /* Added to enable Flexbox */
+    align-items: center;        /* Vertically centers content */
+    justify-content: center;    /* Horizontally centers content */
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.right-column {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+}
+
+.top-div {
+    background-color: #979797;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to left, #1b006d, #530068);
+    border-radius: 100px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #1b006d;
+    border-radius: 10px;
+    width: 0%; /* Adjust with data-progress attribute */
+    transition: width 0.5s ease;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    color: black;
+}
+
+.progress-labels span {
+    display: inline-block;
+}
+
+.gantt-container {
+    background-color: #979797;
+    padding: 10px;
+    border-radius: 10px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gantt-chart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.gantt-header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.gantt-time-header {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+
+    min-width: 80px; /* Adjust as needed for date width */
+    box-sizing: border-box; /* Include padding and border in width */
+    color: black;
+}
+
+.gantt-tasks {
+    position: relative;
+    margin-top: 10px;
+}
+
+.gantt-task {
+    position: relative;
+    background-color: #1b006d;
+    color: #fff;
+    padding: 5px;
+    border-radius: 100px;
+    height: 30px; /* Adjust based on the height you want for each task */
+    margin-bottom: 10px; /* Space between tasks */
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.gantt-task-name {
+    margin: 10px;
+}
+
+
+.notification-popup {
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 160px;
+    background-color: #2E2E4D;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    z-index: 10;
+}
+
+.notification-content {
+    display: flex;
+    padding: 15px;
+}
+
+.notification-pfp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notification-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-info h2 {
+    margin: 0;
+}
+
+.notification-info p {
+    margin: 5px 0;
+}
+
+.notification-info .notification-timestamp {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.popup-overlay {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    width: 300px;
+    background-color: #2E2E4D;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    z-index: 10;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content h3 {
+    margin: 0 0 10px;
+    color: white;
+}
+
+.popup-content p {
+    margin: 0 0 15px;
+    color: white;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-join {
+    background-color: #530068;
+    color: white;
+}
+
+#submit-join:hover {
+    background-color: #1b006d;
+}
+
+#cancel-join {
+    background-color: #888;
+    color: white;
+}
+
+#cancel-join:hover {
+    background-color: #666;
+}
+
+#progress-code-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    margin-bottom: 15px;
+    background-color: #ffffff00;
+    color: white;
+}

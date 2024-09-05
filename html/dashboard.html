@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="icon" type="image/png" href="images/ppts.png">
+</head>
+<body>
+    <div class="sidebar">
+        <center>
+            <img src="../images/PPTS.png" alt="PPTS Logo" class="ppts">
+        </center>
+        <a href="dashboard.html" class="active">
+            <img src="../images/dashw.png" alt="Dashboard" class="logo"> Dashboard
+        </a>
+        <a href="projects.html">
+            <img src="../images/projw.png" alt="Projects" class="logo"> Projects
+        </a>
+        <a href="archives.html">
+            <img src="../images/arcw.png" alt="Archives" class="logo"> Archives
+        </a>
+        <a href="progress.html">
+            <img src="../images/progw.png" alt="Progress" class="logo"> Progress
+        </a>
+        <a href="account.html">
+            <img src="../images/accw.png" alt="Account" class="logo"> Account
+        </a>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="search-container">
+                <h1><a href="dashboard.html">Task Vista</a></h1>
+                <div class="search-bar">
+                    <img src="../images/search.png" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="icons">
+                    <img src="../images/notw.png" alt="Notifications" class="icon" id="notif">
+                    <img src="../images/add.png" alt="User" class="icon" id="join-now-btn-image">
+                    <img src="../images/accw.png" alt="pfp" class="icon">
+                    <span class="user-name">Francine Jane Sto Domingo</span>
+                </div>
+            </div>
+            <div class="welcome">
+                <p class="date-day-time">
+                    <span id="current-date" class="date"></span>
+                    <span class="day" id="current-day"></span>
+                    <span class="time" id="current-time"></span>
+                </p>
+                <h2>Welcome, John Doe!</h2>
+                <p class="p">Don’t forget to view and update your project/s!</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="projects">
+                <h3>Projects</h3>
+                <h4><a href="projects.html">View all -></a></h4> 
+                <p class="none">
+                    You currently don't have a progress space. Would you like to join one?
+                </p>
+                <button id="join-now-btn">Join now</button>
+            </div>
+            <div class="notes">
+                <h3>What's on your mind?</h3>
+                <div class="note-input-container">
+                    <input type="text" id="note-input" placeholder="Add a note...">
+                    <button id="add-note-btn">Add</button>
+                </div>
+                <ul id="note-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Join Progress Popup -->
+    <div id="join-progress-popup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <h3>Join a Progress Space</h3>
+            <p>Would you like to join a progress space? Enter the code below:</p>
+            <input type="text" id="progress-code-input" placeholder="Enter code...">
+            <div class="popup-buttons">
+                <button id="submit-join">Submit</button>
+                <button id="cancel-join">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Popup -->
+    <div id="notification-popup" class="notification-popup" style="display: none;">
+        <div class="notification-content">
+            <div class="notification-info">
+                <span class="notification-user">Francine Jane Sto Domingo</span>
+                <p>Updated the task: <strong>Design Dashboard</strong> in project <strong>Task Vista</strong></p>
+                <p class="notification-timestamp">August 26, 2024, 14:45</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/dashboard.js"></script>
+</body>
+</html>

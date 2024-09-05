@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../css/progress.css">
+</head>
+<body>
+    <div class="sidebar">
+        <center>
+            <img src="../images/PPTS.png" alt="PPTS Logo" class="ppts">
+        </center>
+        <a href="dashboard.html">
+            <img src="../images/dashw.png" alt="Dashboard" class="logo"> Dashboard
+        </a>
+        <a href="projects.html" >
+            <img src="../images/projw.png" alt="Projects" class="logo"> Projects
+        </a>
+        <a href="archives.html">
+            <img src="../images/arcw.png" alt="Archives" class="logo"> Archives
+        </a>
+        <a href="progress.html" class="active">
+            <img src="../images/progw.png" alt="Progress" class="logo"> Progress
+        </a>
+        <a href="account.html">
+            <img src="../images/accw.png" alt="Account" class="logo"> Account
+        </a>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="search-container">
+                <h1><a href="dashboard.html">Task Vista</a></h1>
+                <div class="search-bar">
+                    <img src="../images/search.png" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="icons">
+                    <img src="../images/notw.png" alt="Notifications" class="icon" id="notification-icon">
+                    <img src="../images/add.png" alt="User" class="icon" id="join-now-btn">
+                    <img src="../images/accw.png" alt="pfp" class="icon">
+                    <span class="user-name">Francine Jane Sto Domingo</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="layout">
+            <div class="left-column">
+                <div class="vertical-div">
+                    PROJECT [NAME]
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="top-div">
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <!-- Use data attributes to dynamically update the progress -->
+                            <div class="progress-fill" data-progress="50%"></div>
+                        </div>
+                        <div class="progress-labels">
+                            <span>0%</span>
+                            <span>10%</span>
+                            <span>20%</span>
+                            <span>30%</span>
+                            <span>40%</span>
+                            <span>50%</span>
+                            <span>60%</span>
+                            <span>70%</span>
+                            <span>80%</span>
+                            <span>90%</span>
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-div">
+                    <div class="gantt-container">
+                        <div class="gantt-chart">
+                            <div class="gantt-header">
+                                <!-- Time headers (e.g., specific dates) -->
+                                <div class="gantt-time-header">Aug 26</div>
+                                <div class="gantt-time-header">Aug 27</div>
+                                <div class="gantt-time-header">Aug 28</div>
+                                <div class="gantt-time-header">Aug 29</div>
+                                <!-- Add more dates as needed -->
+                            </div>
+                            <div class="gantt-tasks">
+                                <!-- Tasks with start and end days -->
+                                <div class="gantt-task" data-start="0" data-end="2">
+                                    <div class="gantt-task-name">Task 1</div>
+                                </div>
+                                <div class="gantt-task" data-start="2" data-end="4">
+                                    <div class="gantt-task-name">Task 2</div>
+                                </div>
+                                <div class="gantt-task" data-start="1" data-end="3">
+                                    <div class="gantt-task-name">Task 3</div>
+                                </div>
+                                <!-- Add more tasks as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    <div id="notification-popup" class="notification-popup">
+        <div class="notification-content">
+            <div class="notification-info">
+
+                <span class="notification-user">Francine Jane Sto Domingo</span>
+                <p>Updated the task: <strong>Design Dashboard</strong> in project <strong>Task Vista</strong></p>
+                <p class="notification-timestamp">August 26, 2024, 14:45</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="join-progress-popup" class="popup-overlay">
+        <div class="popup-content">
+            <h3>Join a Progress Space</h3>
+            <p>Would you like to join a progress space? Enter the code below:</p>
+            <input type="text" id="progress-code-input" placeholder="Enter code...">
+            <div class="popup-buttons">
+                <button id="submit-join">Submit</button>
+                <button id="cancel-join">Cancel</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="../javascript/progress.js" defer></script>
+</body>
+</html>

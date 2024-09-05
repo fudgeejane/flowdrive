@@ -1,0 +1,408 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1D1D42;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00003f;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar a .logo {
+    width: 2.7dvh;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    margin-left: 30px;
+}
+
+.sidebar a.active {
+    background-color: #020269;
+}
+
+.sidebar a:hover {
+    background-color: #020269;
+}
+
+.ppts {
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.content {
+    margin-left: 300px;
+    margin-right: 55px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-container h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 30px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #1b006d, #530068) 1;
+    padding: 0 10px;
+    background-color: #ffffff00;
+    position: relative;
+}
+
+.search-icon {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.search-bar input {
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    flex: 1;
+    background-color: #ffffff00;
+    color: #fff;
+    outline: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.icons .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.user-name {
+    margin-left: 10px;
+    color: #fff;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.welcome {
+    background-image: linear-gradient(to right, #1b006d, #530068);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--date-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome .date {
+    color: var(--date-color);
+}
+
+.welcome .day {
+    color: var(--day-color);
+    margin-left: 100px;
+}
+
+.welcome .time {
+    color: var(--time-color);
+    margin-left: 100px;
+}
+
+.welcome h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+:root {
+    --date-color: white;
+    --day-color: white;
+    --time-color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: auto; /* Change from fixed height to auto */
+    margin-top: 20px; /* Add margin-top to ensure there's space above */
+}
+
+
+.projects {
+    flex: 1;
+    background-color: #2E2E4D;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.projects h3 {
+    margin-bottom: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    display: inline-block;
+}
+
+.projects h4 {
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects h4 a {
+    color: white;
+    text-decoration: none;
+}
+
+.projects h4 a:hover {
+    text-decoration: underline;
+}
+
+.projects p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.projects button {
+    background-color: #530068;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects button:hover {
+    background-color: #1b006d;
+}
+
+.notes {
+    flex: 2;
+    background-color: #2E2E4D;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 470px;
+    display: fixed;
+}
+
+.notes h3 {
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.note-input-container {
+    display: flex;
+    gap: 10px;
+}
+
+.note-input-container input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    background-color: #ffffff00;
+    color: white;
+}
+
+.note-input-container button {
+    background-color: #530068;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.note-input-container button:hover {
+    background-color: #1b006d;
+}
+
+#note-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#note-list li {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#note-list li .delete-note-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.notification-popup {
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 160px;
+    background-color: #2e2e4d9f;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    z-index: 10;
+}
+
+.notification-content {
+    display: flex;
+    padding: 15px;
+}
+
+.notification-pfp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notification-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-info h2 {
+    margin: 0;
+}
+
+.notification-info p {
+    margin: 5px 0;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.notification-user {
+    font-weight: bold;
+    color:#ffffff;
+    margin-bottom: 5px;
+}
+
+.notification-info .notification-timestamp {
+    font-size: 12px;
+    color: #ccc;
+    border-bottom: 1px solid white;
+}
+
+.popup-overlay {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    width: 300px;
+    background-color: #2e2e4d9f;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    z-index: 10;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content h3 {
+    margin: 0 0 10px;
+    color: white;
+}
+
+.popup-content p {
+    margin: 0 0 15px;
+    color: white;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-join {
+    background-color: #530068;
+    color: white;
+}
+
+#submit-join:hover {
+    background-color: #1b006d;
+}
+
+#cancel-join {
+    background-color: #888;
+    color: white;
+}
+
+#cancel-join:hover {
+    background-color: #666;
+}
+
+#progress-code-input {
+    width: 92%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    margin-bottom: 15px;
+    background-color: #ffffff00;
+    color: white;
+}
